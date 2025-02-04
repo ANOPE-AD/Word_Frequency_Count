@@ -86,3 +86,5 @@ if __name__ == '__main__':  # 主函数
         # 将结果保存为JSON文件和CSV文件
         Word_Count_DF.to_json('JSON\\%s.json'%targetFile, orient='records')
         Word_Count_DF.to_csv('CSV\\%s.csv'%targetFile, index=False)
+        print('词频统计完成：%s'%targetFile)
+    print("DONE!")
